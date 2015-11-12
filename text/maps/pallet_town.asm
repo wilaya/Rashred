@@ -1,56 +1,60 @@
 _OakAppearsText::
-	text "OAK: Hey! Wait!"
-	line "Don't go out!@@"
+	text "GAT: Hey! Espera!"
+	line "No marxis!@@"
 
 _OakWalksUpText::
-	text "OAK: It's unsafe!"
-	line "Wild #MON live"
-	cont "in tall grass!"
+	text "GAT: No és segur!"
+	line "PORREMONS salvat-"
+	cont "ges viuen als"
+	cont "camps de Maria"
 
-	para "You need your own"
-	line "#MON for your"
-	cont "protection."
-	cont "I know!"
+	para "Necessites els"
+	line "teus propis"
+	cont "PORREMON per la"
+	cont "teva proteccio."
+	cont "Ja ho tinc!"
 
-	para "Here, come with"
-	line "me!"
+	para "Vinga va, vine"
+	line "amb mi!"
 	done
 
 _PalletTownText2::
-	text "I'm raising"
-	line "#MON too!"
+	text "Jo també estic"
+	line "criant PORREMON!"
 
-	para "When they get"
-	line "strong, they can"
-	cont "protect me!"
+	para "Quan siguin grans"
+	line "ja mels podré"
+	cont "fumar!!!"
 	done
 
 _PalletTownText3::
-	text "Technology is"
-	line "incredible!"
+	text "La tecnologia és"
+	line "increible!"
 
-	para "You can now store"
-	line "and recall items"
-	cont "and #MON as"
-	cont "data via PC!"
+	para "Ara pots guardar i"
+	line "treure chupitos"
+	cont "i PORREMON com"
+	cont "dades via PC!"
 	done
 
 _PalletTownText4::
-	text "OAK #MON"
-	line "RESEARCH LAB"
+	text "GAT PORREMON"
+	line "SUBMARI PER A LA"
+	CONT "INVESTIGACIÓ DE"
+	CONT "PETAS!!!"
 	done
 
 _PalletTownText5::
-	text "PALLET TOWN"
-	line "Shades of your"
-	cont "journey await!"
+	text "POBLE DE PALETOS"
+	line "Els fums del teu"
+	cont "viatge t'esperen!"
 	done
 
 _PalletTownText6::
-	text $52,"'s house "
+	text "El rebost d'en ", $52
 	done
 
 _PalletTownText7::
-	text $53,"'s house "
+	text "El rebost d'en ", $53
 	done
 
