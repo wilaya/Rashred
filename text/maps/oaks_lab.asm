@@ -78,7 +78,7 @@ _OaksLabBulbasaurText:: ; 94e57 (25:4e57)
 
 _OaksLabMonEnergeticText:: ; 94e80 (25:4e80)
 	text "Aquest PORREMON"
-	line "es col·loca molt!"
+	line "es col*loca molt!"
 	prompt
 
 _OaksLabReceivedMonText:: ; 94ea0 (25:4ea0)
@@ -196,17 +196,21 @@ IF DEF(_YELLOW)
 	para "Just like I showed"
 	line "you, throw a #"
 ELSE
-	para "Just throw a #"
+	para "Només l'hi has"
+	line "de llencar una"
+	cont "PORRO BALL"
 ENDC
-	line "BALL at it and try"
-	line "to catch it!"
+	line "i intentar"
+	line "liar-lo!"
 
-	para "This won't always"
-	line "work, though."
+	para "Pero no sempre"
+	line "funcionara."
+	cont "A vegades faras"
+	cont "un POYO."
 
-	para "A healthy #MON"
-	line "could escape. You"
-	cont "have to be lucky!"
+	para "Un PORREMON sa es"
+	line "pot escapar. Has"
+	cont "de tenir sort!"
 	done
 
 _OaksLabPleaseVisitText:: ; 9519e (25:519e)
@@ -277,38 +281,42 @@ IF DEF(_YELLOW)
 	line "Go on, take it!"
 	done
 ELSE
-	text "OAK: ", $53, "?"
-	line "Let me think..."
+	text "GAT: ", $53, "?"
+	line "Deixa'm pensar..."
 
-	para "Oh, that's right,"
-	line "I told you to"
-	cont "come! Just wait!"
+	para "Oh, tens rao,"
+	line "et vaig dir que"
+	cont "vinguessis!"
+	cont "Espera!"
 
-	para "Here, ", $52, "!"
+	para "Mira, ", $52, "!"
 
-	para "There are 3"
-	line "#MON here!"
+	para "Aqui tens 3"
+	line "PORREMON!"
 
-	para "Haha!"
+	para "Hahaha!"
 
-	para "They are inside"
-	line "the # BALLs."
+	para "Estan liats dins"
+	line "les PORRO BALLs."
 
-	para "When I was young,"
-	line "I was a serious"
-	cont "#MON trainer!"
+	para "Quan era jove,"
+	line "Jo era un fumador"
+	cont "de PORREMONS"
+	cont " molt serios!"
+	cont "Hihihi!"
 
-	para "In my old age, I"
-	line "have only 3 left,"
-	cont "but you can have"
-	cont "one! Choose!"
+	para "Pero a la meva"
+	line "edat, ja només"
+	cont "em queden 3"
+	cont "PORREMONS,"
+	cont "pero te'n deixo"
+	cont "fumar un! Tria!"
 	done
 ENDC
 
 _OaksLabRivalInterjectionText:: ; 953dc (25:53dc)
 	text $53, ": Hey!"
-	line "Gramps! What"
-	cont "about me?"
+	line "Avi! I jo que?"
 	done
 
 _OaksLabBePatientText:: ; 953fc (25:53fc)
@@ -318,9 +326,12 @@ IF DEF(_YELLOW)
 	cont "you one later."
 	done
 ELSE
-	text "OAK: Be patient!"
-	line $53, ", you can"
-	cont "have one too!"
+	text "GAT: Sigues"
+	line "pacient! El mono"
+	cont "no és bo!"
+	cont $53, ", pero"
+	cont "també en tinc un"
+	cont "per tu!"
 	done
 ENDC
 
@@ -378,51 +389,56 @@ _OaksLabReceivedText::
 ENDC
 
 _OaksLabLeavingText:: ; 95427 (25:5427)
-	text "OAK: Hey! Don't go"
-	line "away yet!"
+	text "GAT: Hey! No"
+	line "marxis encara!"
 	done
 
 _OaksLabRivalPickingMonText:: ; 95444 (25:5444)
-	text $53, ": I'll take"
-	line "this one, then!"
+	text $53, ": Em quedo"
+	line "amb aquest doncs!"
 	done
 
 _OaksLabRivalReceivedMonText:: ; 95461 (25:5461)
-	text $53, " received"
+	text $53, " aconsegueix"
 	line "a @"
 	TX_RAM wcd6d
 	text "!@@"
 
 _OaksLabRivalChallengeText:: ; 95477 (25:5477)
-	text $53, ": Wait"
+	text $53, ": Espera"
 	line $52, "!"
-	cont "Let's check out"
-	cont "our #MON!"
+	cont "Fotem-nos ja"
+	cont "els nostres"
+	cont "PORREMON!"
 
-	para "Come on, I'll take"
-	line "you on!"
+	para "Vinga va, quien"
+	line "lo lia lo peta!"
 	done
 
 _OaksLabText_1d3be:: ; 954b6 (25:54b6)
-	text "WHAT?"
-	line "Unbelievable!"
-	cont "I picked the"
-	cont "wrong #MON!"
+	text "QUE?"
+	line "Increible!"
+	cont "He triat el"
+	cont "PORREMON"
+	cont "equivocat!"
 	prompt
 
 _OaksLabText_1d3c3:: ; 954e4 (25:54e4)
-	text $53, ": Yeah! Am"
-	line "I great or what?"
+	text $53, ": SUUUU!"
+	line "Soc el puto amo"
+	cont "o no?"
 	prompt
 
 _OaksLabRivalToughenUpText:: ; 95502 (25:5502)
 	text $53, ": Okay!"
-	line "I'll make my"
-	cont "#MON fight to"
-	cont "toughen it up!"
+	line "liaré molt bé els"
+	cont "meus PORREMON"
+	cont "perque col-"
+	cont "loquin més!"
 
-	para $52, "! Gramps!"
-	line "Smell you later!"
+	para $52, "! Avi!"
+	line "Quedem després"
+	cont "per turcar-la!"
 	done
 
 IF DEF(_YELLOW)
@@ -452,7 +468,7 @@ _OaksLabPikachuDislikesPokeballsText2::
 ENDC
 
 _OaksLabText21:: ; 95551 (25:5551)
-	text $53, ": Gramps!"
+	text $53, ": Avi!"
 	done
 
 _OaksLabText22:: ; 9555d (25:555d)
@@ -463,8 +479,8 @@ IF DEF(_YELLOW)
 	cont "Check it out!"
 	done
 ELSE
-	text $53, ": What did"
-	line "you call me for?"
+	text $53, ": Perque"
+	line "m'has cridat?"
 	done
 ENDC
 
@@ -478,78 +494,91 @@ IF DEF(_YELLOW)
 	cont "something for me."
 	done
 ELSE
-	text "OAK: Oh right! I"
-	line "have a request"
-	cont "of you two."
+	text "GAT: Oh cert! Us"
+	line "he de demanar una"
+	cont "cosa."
 	done
 ENDC
 
 _OaksLabText24:: ; 955a8 (25:55a8)
-	text "On the desk there"
-	line "is my invention,"
-	cont "#DEX!"
+	text "Sobre la taula"
+	line "hi ha el meu,"
+	cont "invent, la"
+	cont "PORRODEX!"
 
-	para "It automatically"
-	line "records data on"
-	cont "#MON you've"
-	cont "seen or caught!"
+	para "Guardara"
+	line "automaticament la"
+	cont "informacio dels"
+	cont "PORREMONs"
+	cont "que hagueu vist o"
+	cont "us hagueu fumat!"
 
-	para "It's a hi-tech"
-	line "encyclopedia!"
+	para "És una enciclo-"
+	line "pedia d'ultima2
+	cont "tecnologia!"
 	done
 
 _OaksLabText25:: ; 9562a (25:562a)
-	text "OAK: ", $52, " and"
-	line $53, "! Take"
-	cont "these with you!"
+	text "GAT: ", $52, " i"
+	line $53, "! "
+	cont "Preneu aixo amb"
+	cont "vosaltres!"
 
-	para $52, " got"
-	line "#DEX from OAK!@@"
+	para $52, " obté"
+	line "PORRODEX del GAT!@@"
 
 _OaksLabText26:: ; 95664 (25:5664)
-	text "To make a complete"
-	line "guide on all the"
-	cont "#MON in the"
-	cont "world..."
+	text "Fer una guia"
+	line "completa dels"
+	cont "PORREMON de tot"
+	cont "el mon..."
 
-	para "That was my dream!"
+	para "Aguest era el"
+	line "meu somni!"
 
-	para "But, I'm too old!"
-	line "I can't do it!"
+	para "Pero, soc massa"
+	line "vell! Ja no em!"
+	cont "puc col*locar"
+	cont "tant com abans!"
 
-	para "So, I want you two"
-	line "to fulfill my"
-	cont "dream for me!"
+	para "Bé, vull que"
+	line "vosaltres feu"
+	cont "realitat aquest"
+	cont "somni per mi!"
 
-	para "Get moving, you"
-	line "two!"
+	para "Ballem!!!"
+	line "Cantem!!!"
 
-	para "This is a great"
-	line "undertaking in"
-	cont "#MON history!"
+	para "Aixo és fantastic"
+	line "comencareu una"
+	cont "nova historia"
+	cont "PORREMON!"
 	done
 
 _OaksLabText27:: ; 95741 (25:5741)
-	text $53, ": Alright"
-	line "Gramps! Leave it"
-	cont "all to me!"
+	text $53, ": Dacord!"
+	line "Avi! Daixa-ho a"
+	cont "les meves mans!"
 
-	para $52, ", I hate to"
-	line "say it, but I"
-	cont "don't need you!"
+	para $52, ", em sap greu"
+	line "dir-ho, pero no"
+	cont "necessito!"
 
-	para "I know! I'll"
-	line "borrow a TOWN MAP"
-	cont "from my sis!"
+	para "Ja ho tinc!"
+	line "Demanaré el mapa"
+	cont "a la guarra de"
+	cont "ma germana!"
 
-	para "I'll tell her not"
-	line "to lend you one,"
+	para "I li diré que no"
+	line "te'n doni cap,"
 	cont $52, "! Hahaha!"
 	done
 
 _OaksLabText_1d405:: ; 957eb (25:57eb)
-	text "I study #MON as"
-	line "PROF.OAK's AIDE."
+	text "Estudio els"
+	line "PORREMON com a "
+	cont "assistent del"
+	cont "PROF. MORAT."
 	done
 
 _OaksLabText_441cc:: ; 9580c (25:580c)
