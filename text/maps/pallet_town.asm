@@ -33,7 +33,7 @@ _PalletTownText3::
 
 	para "Ara pots guardar i"
 	line "treure chupitos"
-	cont "i PORREMON com"
+	cont "i PORREMON com a"
 	cont "dades via PC!"
 	done
 
@@ -46,7 +46,7 @@ _PalletTownText4::
 
 _PalletTownText5::
 	text "POBLE DE PALETOS"
-	line "Els fums del teu"
+	line "Els fums d'aquest"
 	cont "viatge t'esperen!"
 	done
 
