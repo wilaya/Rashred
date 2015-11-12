@@ -18,8 +18,9 @@ _OakSpeechText2B::
 	text $51,"Per alguna gent,"
 	line "els PORREMONS son"
 	cont "perillosos. Altres"
-	cont "els fan servir per"
-	cont "anar ben contents."
+	cont "els utilitzen per"
+	cont "anar ben contents"
+	cont "a les festes."
 
 	para "Per mi..."
 
@@ -41,7 +42,7 @@ _IntroduceRivalText::
 	cont "anaves a P3."
 
 	para "...Erm, em pots"
-	line "recordar el seu nom?"
+	line "dir el seu nom?"
 	prompt
 
 _OakSpeechText3::
@@ -50,7 +51,7 @@ _OakSpeechText3::
 	para "La teva propia"
 	line "aventura PORREMON"
 	cont "esta a punt de"
-	cont "començar!"
+	cont "comencar!"
 
 	para "Un mon de somnis"
 	line "i grans fumades"
