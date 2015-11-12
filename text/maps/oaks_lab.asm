@@ -514,7 +514,7 @@ _OaksLabText24:: ; 955a8 (25:55a8)
 	cont "us hagueu fumat!"
 
 	para "És una enciclo-"
-	line "pedia d'ultima2
+	line "pedia d'ultima"
 	cont "tecnologia!"
 	done
 
