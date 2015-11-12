@@ -20,7 +20,7 @@ IF DEF(_YELLOW)
 	done
 ELSE
 	text $53,": Heh, jo"
-	line "necessito ser"
+	line "no necessito ser"
 	cont "avaricios com tu!"
 
 	para "Endevant"
@@ -40,150 +40,157 @@ ENDC
 
 _OaksLabText39:: ; 94ddf (25:4ddf)
 IF DEF(_YELLOW)
-	text "That's a #"
-	line "BALL. There's a"
-	cont "#MON inside!"
+	text "Aixo es una PORRO"
+	line "BALL. Hi ha un"
+	cont "PORREMON dins!"
 	done
 ELSE
-	text "Those are #"
-	line "BALLs. They"
-	cont "contain #MON!"
+	text "Aixo son PORRO"
+	line "BALLs. Dins hi"
+	cont "ha un PORREMON!"
 	done
 ENDC
 
 IF DEF(_YELLOW)
 _OaksLabPikachuText::
-	text "OAK: Go ahead,"
-	line "it's yours!"
+	text "GAT: Endevant,"
+	line "és teu!"
 	done
 ENDC
 
 _OaksLabCharmanderText:: ; 94e06 (25:4e06)
-	text "So! You want the"
-	line "fire #MON,"
-	cont "CHARMANDER?"
+	text "OH! Vols el"
+	line "PORREMON de foc,"
+	cont "CHUPITANDER?"
 	done
 
 _OaksLabSquirtleText:: ; 94e2f (25:4e2f)
-	text "So! You want the"
-	line "water #MON,"
-	cont "SQUIRTLE?"
+	text "OH! Vols el"
+	line "PORREMON d'aigua,"
+	cont "VODKUIRTLE?"
 	done
 
 _OaksLabBulbasaurText:: ; 94e57 (25:4e57)
-	text "So! You want the"
-	line "plant #MON,"
-	cont "BULBASAUR?"
+	text "OH! Vols el"
+	line "PORREMON planta,"
+	cont "GINBASAUR?"
 	done
 
 _OaksLabMonEnergeticText:: ; 94e80 (25:4e80)
-	text "This #MON is"
-	line "really energetic!"
+	text "Aquest PORREMON"
+	line "es col·loca molt!"
 	prompt
 
 _OaksLabReceivedMonText:: ; 94ea0 (25:4ea0)
-	text $52, " received"
+	text $52, " ha rebut"
 	line "a @"
 	TX_RAM wcd6d
 	text "!@@"
 
 _OaksLabLastMonText:: ; 94eb6 (25:4eb6)
-	text "That's PROF.OAK's"
-	line "last #MON!"
+	text "Aquest és l'ultim"
+	line "PORREMON del"
+	cont "PROF. GAT!"
 	done
 
 _OaksLabText_1d2f0:: ; 94ed2 (25:4ed2)
-	text "OAK: Now, ", $52, ","
-	line "which #MON do"
-	cont "you want?"
+	text "GAT: bé, ", $52, ","
+	line "quin PORREMON"
+	cont "vols?"
 	done
 
 _OaksLabText_1d2f5:: ; 94ef8 (25:4ef8)
-	text "OAK: If a wild"
-	line "#MON appears,"
-	cont "your #MON can"
-	cont "fight against it!"
+	text "GAT: Si apareix"
+	line "un PORREMON"
+	cont "salvatge, els"
+	cont "teus PORREMON"
+	cont "poden lluitar-hi!"
 
 IF DEF(_YELLOW)
-	para "Afterward, go on"
-	line "to the next town."
+	para "Després, vés cap"
+	line "a la propera"
+	cont "ciutat."
 ENDC
 	done
 
 _OaksLabText_1d2fa:: ; 94f36 (25:4f36)
 IF DEF(_YELLOW)
-	text "OAK: You should"
-	line "talk to it and"
-	cont "see how it feels."
+	text "GAT: Hauries de"
+	line "parlar amb ell"
+	cont "aveure com"
+	cont "se sent."
 	done
 ELSE
-	text "OAK: ", $52, ","
-	line "raise your young"
-	cont "#MON by making"
-	cont "it fight!"
+	text "GAT: ", $52, ","
+	line "fes creixer els"
+	cont "teus PORREMONs"
+	cont "lluitant!"
 	done
 ENDC
 
 _OaksLabDeliverParcelText1:: ; 94f69 (25:4f69)
-	text "OAK: Oh, ", $52, "!"
+	text "GAT: Oh, ", $52, "!"
 
-	para "How is my old"
-	line "#MON?"
+	para "Com es troba el"
+	line "meu antic"
+	cont "PORREMON?"
 
-	para "Well, it seems to"
-	line "like you a lot."
+	para "Be, em sembla que"
+	line "te'l fumes molt."
 
-	para "You must be"
-	line "talented as a"
-	cont "#MON trainer!"
+	para "Deus tenir un"
+	line "talent innat com"
+	cont "a fumador de"
+	cont "PORREMON!"
 
-	para "What? You have"
-	line "something for me?"
+	para "Que? tens alguna"
+	line "cosa per mi?"
 
-	para $52, " delivered"
+	para $52, " entregat"
 	line "OAK's PARCEL.@@"
 
 _OaksLabDeliverParcelText2:: ; 9500f (25:500f)
 	db $0
-	para "Ah! This is the"
-	line "custom # BALL"
-	cont "I ordered!"
+	para "Ah! És aquesta la"
+	line "PORROBALL que"
+	cont "havia demanat!"
 IF DEF(_YELLOW)
-	cont "Thanks, ",$52,"!"
+	cont "Gràcies, ",$52,"!"
 
-	para "By the way, I must"
-	line "ask you to do"
-	cont "something for me."
+	para "Per cert, T'he de"
+	line "demanar un favor."
 ELSE
-	cont "Thank you!"
+	cont "Moltes gracies!"
 ENDC
 	done
 
 _OaksLabAroundWorldText:: ; 95045 (25:5045)
-	text "#MON around the"
-	line "world wait for"
-	cont "you, ", $52, "!"
+	text "Els PORREMON "
+	line "t'esperen arreu"
+	cont "del mon, ", $52, "!"
 	done
 
 _OaksLabGivePokeballsText1:: ; 9506d (25:506d)
-	text "OAK: You can't get"
-	line "detailed data on"
-	cont "#MON by just"
-	cont "seeing them."
+	text "GAT: No pots saber"
+	line "els les qualitats"
+	cont "d'una droga només"
+	cont "amb veure-la."
 
-	para "You must catch"
-	line "them! Use these"
-	cont "to capture wild"
-	cont "#MON."
+	para "L'has de provar!"
+	line "Fes servir aixo"
+	cont "per atrapar els"
+	cont "PORREMON"
+	cont "salvatges."
 
-	para $52, " got 5"
-	line "# BALLs!@@"
+	para $52, " tinc 5"
+	line "PORRO BALLs!@@"
 
 _OaksLabGivePokeballsText2:: ; 950f2 (25:50f2)
 	db $0
-	para "When a wild"
-	line "#MON appears,"
-	cont "it's fair game."
+	para "Quan un PORREMON"
+	line "salvatge apareix,"
+	cont "te'l pots"
+	cont "intentar fumar."
 
 IF DEF(_YELLOW)
 	para "Just like I showed"
@@ -230,19 +237,20 @@ _OaksLabText8:: ; 95268 (25:5268)
 	done
 
 _OaksLabText_1d340:: ; 9526b (25:526b)
-	text "PROF.OAK is the"
-	line "authority on"
-	cont "#MON!"
+	text "PROF. GAT és una"
+	line "autoritat entre"
+	cont "fumadors de"
+	cont "PORREMON!"
 
-	para "Many #MON"
-	line "trainers hold him"
-	cont "in high regard!"
+	para "Molts Jonkies"
+	line "el tenen en alta"
+	cont "estima!"
 	done
 
 _OaksLabRivalWaitingText:: ; 952bb (25:52bb)
-	text $53, ": Gramps!"
-	line "I'm fed up with"
-	cont "waiting!"
+	text $53, ": Avi!"
+	line "Ja estic cansat"
+	cont "d'esperar!"
 	done
 
 _OaksLabChooseMonText:: ; 952df (25:52df)
