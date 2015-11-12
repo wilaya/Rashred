@@ -1,7 +1,7 @@
 _OakSpeechText1::
 	text "Hola Amic!"
 	line "Benvingut al"
-	cont "món dels RASHES!"
+	cont "mon dels RASHES!"
 
 	para "El meu nom és GAT!"
 	line "La gent em diu"
@@ -9,21 +9,23 @@ _OakSpeechText1::
 	prompt
 
 _OakSpeechText2A::
-	text "Aquest món està"
+	text "Aquest mon esta"
 	line "habitat per"
 	cont "criatures anomenades"
 	cont "PORREMONS!@@"
 
 _OakSpeechText2B::
 	text $51,"Per alguna gent,"
-	line "els PORREMONS són"
-	cont "divertits. Altres els"
-	cont "fan servir per volar."
+	line "els PORREMONS son"
+	cont "perillosos. Altres"
+	cont "els fan servir per"
+	cont "anar ben contents."
 
 	para "Per mi..."
 
-	para "Jo estudio els PORREMON"
-	line "com a professió."
+	para "Jo estudio els"
+	line "PORREMON com"
+	cont "a professio."
 	prompt
 
 _IntroducePlayerText::
@@ -32,10 +34,11 @@ _IntroducePlayerText::
 	prompt
 
 _IntroduceRivalText::
-	text "Aquest és el meu"
-	line "net. Ell ha estat"
-	cont "el teu rival des"
-	cont "que anaves a P3."
+	text "Aquest és el"
+	line "meu net. Ell ha"
+	cont "estat el teu"
+	cont "rival des que"
+	cont "anaves a P3."
 
 	para "...Erm, em pots"
 	line "recordar el seu nom?"
@@ -44,11 +47,12 @@ _IntroduceRivalText::
 _OakSpeechText3::
 	text $52,"!"
 
-	para "La teva pròpia"
-	line "aventura PORREMON està"
-	cont "a punt de començar!"
+	para "La teva propia"
+	line "aventura PORREMON"
+	cont "esta a punt de"
+	cont "començar!"
 
-	para "Un món de somnis"
+	para "Un mon de somnis"
 	line "i grans fumades"
 	cont "amb els PORREMON"
 	cont "t'espera! Som-hi!"
