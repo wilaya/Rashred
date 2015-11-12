@@ -40,8 +40,8 @@ _PalletTownText3::
 _PalletTownText4::
 	text "GAT PORREMON"
 	line "SUBMARI PER A LA"
-	CONT "INVESTIGACIÓ DE"
-	CONT "PETAS!!!"
+	cont "INVESTIGACIO DE"
+	cont "PETAS!!!"
 	done
 
 _PalletTownText5::
