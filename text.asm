@@ -73,8 +73,9 @@ _MartSignText:: ; 800d2 (20:40d2)
 	done
 
 _PokeCenterSignText:: ; 800fc (20:40fc)
-	text "Heal Your #MON!"
-	line "#MON CENTER"
+	text "Lia els teus"
+	line "PORROS!"
+	cont "CENTRE PORREMON"
 	done
 
 _FoundItemText:: ; 80119 (20:4119)
@@ -84,8 +85,8 @@ _FoundItemText:: ; 80119 (20:4119)
 	text "!@@"
 
 _NoMoreRoomForItemText:: ; 8012a (20:412a)
-	text "No more room for"
-	line "items!"
+	text "No tens lloc per"
+	line "més merdes!"
 	done
 
 _OaksAideHiText:: ; 80143 (20:4143)
@@ -1237,8 +1238,8 @@ _MultiHitText:: ; 898aa (22:58aa)
 
 _ScaredText:: ; 898c7 (22:58c7)
 	TX_RAM wBattleMonNick
-	text " is too"
-	line "scared to move!"
+	text " esta massa"
+	line "morat per moures!"
 	prompt
 
 _GetOutText:: ; 898e3 (22:58e3)
@@ -1283,17 +1284,17 @@ _DisabledNoMoreText:: ; 89968 (22:5968)
 
 _IsConfusedText:: ; 8997e (22:597e)
 	text $5A
-	line "is confused!"
+	line "esta de bajon!"
 	prompt
 
 _HurtItselfText:: ; 8998e (22:598e)
-	text "It hurt itself in"
-	line "its confusion!"
+	text "Amb el bajon es"
+	line "mal a ell mateix!"
 	prompt
 
 _ConfusedNoMoreText:: ; 899b0 (22:59b0)
-	text $5A,"'s"
-	line "confused no more!"
+	text $5A," ja"
+	line "no esta de bajon!"
 	prompt
 
 _SavingEnergyText:: ; 899c6 (22:59c6)
@@ -1334,14 +1335,14 @@ _MonName1Text:: ; 89a40 (22:5a40)
 
 _Used1Text:: ; 89a44 (22:5a44)
 	db $0
-	line "used @@"
+	line "utilitza @@"
 
 _Used2Text:: ; 89a4d (22:5a4d)
 	db $0
-	line "used @@"
+	line "utilitza @@"
 
 _InsteadText:: ; 89a56 (22:5a56)
-	text "instead,"
+	text "en canvi,"
 	cont "@@"
 
 _CF4BText:: ; 89a62 (22:5a62)
@@ -1369,8 +1370,8 @@ _ExclamationPoint5Text:: ; 89a73 (22:5a73)
 	done
 
 _AttackMissedText:: ; 89a76 (22:5a76)
-	text $5a, "'s"
-	line "attack missed!"
+	text $5a, " no"
+	line "l'ha rulat bé!"
 	prompt
 
 _KeptGoingAndCrashedText:: ; 89a89 (22:5a89)
@@ -1380,21 +1381,21 @@ _KeptGoingAndCrashedText:: ; 89a89 (22:5a89)
 	prompt
 
 _UnaffectedText:: ; 89aa4 (22:5aa4)
-	text $59, "'s"
-	line "unaffected!"
+	text $59, " no"
+	line "esta afectat!"
 	prompt
 
 _DoesntAffectMonText:: ; 89ab4 (22:5ab4)
-	text "It doesn't affect"
+	text "No afecta en"
 	line $59, "!"
 	prompt
 
 _CriticalHitText:: ; 89ac9 (22:5ac9)
-	text "Critical hit!"
+	text "Calada crítica!"
 	prompt
 
 _OHKOText:: ; 89ad8 (22:5ad8)
-	text "One-hit KO!"
+	text "Una calada i KO!"
 	prompt
 
 _LoafingAroundText:: ; 89ae5 (22:5ae5)
@@ -1468,21 +1469,21 @@ _BoostedText:: ; 89be1 (22:5be1)
 	cont "@@"
 _ExpPointsText:: ; 89bee (22:5bee)
 	TX_NUM wExpAmountGained, 2, 4
-	text " EXP. Points!"
+	text " NUTRIENTS!"
 	prompt
 
 _GrewLevelText:: ; 89c01 (22:5c01)
 	TX_RAM wcd6d
-	text " grew"
-	line "to level @"
+	text " ha"
+	line "crescut @"
 	TX_NUM wCurEnemyLVL, 1, 3
-	text "!@@"
+	text "cm!@@"
 
 _WildMonAppearedText:: ; 89c1d (22:5c1d)
-	text "Wild @"
+	text "@ salvatge "
 	TX_RAM wEnemyMonNick
 	db $0
-	line "appeared!"
+	line "ha aparegut!"
 	prompt
 
 _HookedMonAttackedText:: ; 89c33 (22:5c33)
@@ -1496,13 +1497,13 @@ _HookedMonAttackedText:: ; 89c33 (22:5c33)
 _EnemyAppearedText:: ; 89c4f (22:5c4f)
 	TX_RAM wEnemyMonNick
 	db $0
-	line "appeared!"
+	line "ha aparegut!"
 	prompt
 
 _TrainerWantsToFightText:: ; 89c5e (22:5c5e)
 	TX_RAM wTrainerName
-	text " wants"
-	line "to fight!"
+	text " vol"
+	line "lluitar!"
 	prompt
 
 _UnveiledGhostText:: ; 89c73 (22:5c73)
@@ -1553,20 +1554,20 @@ _ComeBackText:: ; 89d15 (22:5d15)
 	done
 
 _SuperEffectiveText:: ; 89d22 (22:5d22)
-	text "It's super"
-	line "effective!"
+	text "És molt"
+	line "efectiu!"
 	prompt
 
 _NotVeryEffectiveText:: ; 89d38 (22:5d38)
-	text "It's not very"
-	line "effective..."
+	text "No és molt"
+	line "efectiu..."
 	prompt
 
 _SafariZoneEatingText:: ; 89d53 (22:5d53)
-	text "Wild @"
+	text "@ salvatge"
 	TX_RAM wEnemyMonNick
 	db $0
-	line "is eating!"
+	line "esta menjant!"
 	prompt
 
 _SafariZoneAngryText:: ; 89d6a (22:5d6a)
@@ -1590,8 +1591,8 @@ _ClearSaveDataText:: ; 89d96 (22:5d96)
 	done
 
 _WhichFloorText:: ; 89dad (22:5dad)
-	text "Which floor do"
-	line "you want? "
+	text "A quin pis"
+	line "vols anar? "
 	done
 
 IF DEF(_YELLOW)
@@ -1639,20 +1640,23 @@ _PotionText:: ; 89e31 (22:5e31)
 
 _AntidoteText:: ; 89e4b (22:5e4b)
 	TX_RAM wcd6d
-	text " was"
-	line "cured of poison!"
+	text " ha estat"
+	line "curat del coma"
+	cont "eilic!"
 	done
 
 _ParlyzHealText:: ; 89e65 (22:5e65)
 	TX_RAM wcd6d
-	text "'s"
-	line "rid of paralysis!"
+	text " s'ha"
+	line "desfet de la"
+	cont "droga!"
 	done
 
 _BurnHealText:: ; 89e7d (22:5e7d)
 	TX_RAM wcd6d
-	text "'s"
-	line "burn was healed!"
+	text " ha"
+	line "cicratitzat la"
+	cont "cremada del piti!"
 	done
 
 _IceHealText:: ; 89e94 (22:5e94)
@@ -1669,8 +1673,9 @@ _AwakeningText:: ; 89ea8 (22:5ea8)
 
 _FullHealText:: ; 89eb6 (22:5eb6)
 	TX_RAM wcd6d
-	text "'s"
-	line "health returned!"
+	text " ha"
+	line "recuperat el"
+	cont "morat!"
 	done
 
 _ReviveText:: ; 89ecd (22:5ecd)
@@ -1687,16 +1692,17 @@ _RareCandyText:: ; 89ee2 (22:5ee2)
 	text "!@@"
 
 _TurnedOnPC1Text:: ; 89efe (22:5efe)
-	text $52, " turned on"
-	line "the PC."
+	text $52, " ha ences"
+	line "el PC."
 	prompt
 
 _AccessedBillsPCText:: ; 89f13 (22:5f13)
-	text "Accessed BILL's"
-	line "PC."
+	text "Accedeixes al"
+	line "PC den BILL."
 
-	para "Accessed #MON"
-	line "Storage System."
+	para "Sistema"
+	line "d'emmagatzament"
+	cont "dels PORREMONS."
 	prompt
 
 _AccessedSomeonesPCText:: ; 89f45 (22:5f45)
@@ -1929,21 +1935,21 @@ _ClosedOaksPCText:: ; 8a37b (22:637b)
 	line "PROF.OAK's PC.@@"
 
 _AccessedOaksPCText:: ; 8a39a (22:639a)
-	text "Accessed PROF."
-	line "OAK's PC."
+	text "Has accedit al PC"
+	line "del PROF. MORA"
 
 	para "Accessed #DEX"
 	line "Rating System."
 	prompt
 
 _WhereWouldYouLikeText:: ; 8a3d0 (22:63d0)
-	text "Where would you"
-	line "like to go?"
+	text "On t'agradaria"
+	line "anar?"
 	done
 
 _PleaseWaitText:: ; 8a3ed (22:63ed)
-	text "OK, please wait"
-	line "just a moment."
+	text "D'acord, espera't"
+	line "un moment."
 	done
 
 _LinkCanceledText:: ; 8a40d (22:640d)
@@ -1954,22 +1960,22 @@ _LinkCanceledText:: ; 8a40d (22:640d)
 INCLUDE "text/oakspeech.asm"
 
 _DoYouWantToNicknameText:: ; 0x8a605
-	text "Do you want to"
-	line "give a nickname"
-	cont "to @"
+	text "Vols posar un"
+	line "sobrenom a"
+	cont "@"
 	TX_RAM wcd6d
 	text "?"
 	done
 
 _YourNameIsText:: ; 8a62f (22:662f)
-	text "Right! So your"
-	line "name is ", $52, "!"
+	text "Cert! El teu"
+	line "nom és ", $52, "!"
 	prompt
 
 _HisNameIsText:: ; 8a64a (22:664a)
-	text "That's right! I"
-	line "remember now! His"
-	cont "name is ", $53, "!"
+	text "Tens rao! Ja m'en"
+	line "recordo! El seu"
+	cont "nom és ", $53, "!"
 	prompt
 
 _WillBeTradedText:: ; 8a677 (22:6677)
@@ -2352,7 +2358,7 @@ _BecameConfusedText:: ; 94878 (25:4878)
 
 _MimicLearnedMoveText:: ; 9488c (25:488c)
 	text $5a
-	line "learned"
+	line "ha après"
 	cont "@"
 	TX_RAM wcd6d
 	text "!"
@@ -2367,31 +2373,31 @@ _MoveWasDisabledText:: ; 9489e (25:489e)
 	prompt
 
 _NothingHappenedText:: ; 948b6 (25:48b6)
-	text "Nothing happened!"
+	text "No ha passat res!"
 	prompt
 
 _NoEffectText:: ; 948c9 (25:48c9)
-	text "No effect!"
+	text "No fa efecte!"
 	prompt
 
 _ButItFailedText:: ; 948d5 (25:48d5)
-	text "But, it failed! "
+	text "Pero, ha fallat! "
 	prompt
 
 _DidntAffectText:: ; 948e7 (25:48e7)
-	text "It didn't affect"
+	text "No afecta a "
 	line $59, "!"
 	prompt
 
 _IsUnaffectedText:: ; 948fb (25:48fb)
 	text $59
-	line "is unaffected!"
+	line "no esta afectat!"
 	prompt
 
 _ParalyzedMayNotAttackText:: ; 9490d (25:490d)
-	text $59, "'s"
-	line "paralyzed! It may"
-	cont "not attack!"
+	text $59, "esta"
+	line "paralitzat!"
+	cont "Potser no ataqui!"
 	prompt
 
 _SubstituteText:: ; 9492f (25:492f)
@@ -2457,12 +2463,12 @@ _FellAsleepBecameHealthyText:: ; 94a35 (25:4a35)
 
 _RegainedHealthText:: ; 94a58 (25:4a58)
 	text $5a
-	line "regained health!"
+	line "Va més morat!"
 	prompt
 
 _TransformedText:: ; 94a6c (25:4a6c)
 	text $5a
-	line "transformed into"
+	line "es transforma en"
 	cont "@"
 	TX_RAM wcd6d
 	text "!"
@@ -2603,8 +2609,8 @@ INCLUDE "text/maps/saffron_pokecenter.asm"
 INCLUDE "text/maps/mr_psychics_house.asm"
 
 _PokemartGreetingText:: ; a259c (28:659c)
-	text "Hi there!"
-	next "May I help you?"
+	text "Hola company!"
+	next "et puc ajudar?"
 	done
 
 _PokemonFaintedText:: ; a25b7 (28:65b7)
@@ -2614,11 +2620,12 @@ _PokemonFaintedText:: ; a25b7 (28:65b7)
 	done
 
 _PlayerBlackedOutText:: ; a25c5 (28:65c5)
-	text $52, " is out of"
-	line "useable #MON!"
+	text $52, " s'ha quedat"
+	line "sense PORREMONS"
+	cont "per fumar!"
 
-	para $52, " blacked"
-	line "out!"
+	para $52, "esta"
+	line "de bajon!"
 	prompt
 
 _RepelWoreOffText:: ; a25ef (28:65ef)
@@ -2633,72 +2640,72 @@ _PokemartBuyingGreetingText:: ; a2608 (28:6608)
 _PokemartTellBuyPriceText:: ; a2619 (28:6619)
 	TX_RAM wcf4b
 	text "?"
-	line "That will be"
+	line "Aixo et costara"
 	cont "¥@"
 	TX_BCD hMoney, $c3
 	text ". OK?"
 	done
 
 _PokemartBoughtItemText:: ; a2639 (28:6639)
-	text "Here you are!"
-	line "Thank you!"
+	text "Aqui ho tens!"
+	line "Moltes gracies!"
 	prompt
 
 _PokemartNotEnoughMoneyText:: ; a2653 (28:6653)
-	text "You don't have"
-	line "enough money."
+	text "No tens prous"
+	line "diners."
 	prompt
 
 _PokemartItemBagFullText:: ; a2670 (28:6670)
-	text "You can't carry"
-	line "any more items."
+	text "No pots portar"
+	line "més objectes."
 	prompt
 
 _PokemonSellingGreetingText:: ; a2690 (28:6690)
-	text "What would you"
-	line "like to sell?"
+	text "Que d'agradaria"
+	line "vendre?"
 	done
 
 _PokemartTellSellPriceText:: ; a26ae (28:66ae)
-	text "I can pay you"
+	text "Et puc donar"
 	line "¥@"
 	TX_BCD hMoney, $c3
-	text " for that."
+	text " per aixo."
 	done
 
 _PokemartItemBagEmptyText:: ; a26cf (28:66cf)
-	text "You don't have"
-	line "anything to sell."
+	text "No tens res"
+	line "per vendre."
 	prompt
 
 _PokemartUnsellableItemText:: ; a26f0 (28:66f0)
-	text "I can't put a"
-	line "price on that."
+	text "No puc posar"
+	line "preu a aixo."
 	prompt
 
 _PokemartThankYouText:: ; a270d (28:670d)
-	text "Thank you!"
+	text "Moltes gracies!"
 	done
 
 _PokemartAnythingElseText:: ; a2719 (28:6719)
-	text "Is there anything"
-	line "else I can do?"
+	text "Puc fer alguna"
+	line "cosa més per tu?"
 	done
 
 _LearnedMove1Text:: ; a273b (28:673b)
 	TX_RAM wLearnMoveMonName
-	text " learned"
+	text " ha apres"
 	line "@"
 	TX_RAM wcf4b
 	text "!@@"
 
 _WhichMoveToForgetText:: ; a2750 (28:6750)
-	text "Which move should"
-	next "be forgotten?"
+	text "Quin moviment"
+	next "hauria d'oblidar?"
 	done
 
 _AbandonLearningText:: ; a2771 (28:6771)
-	text "Abandon learning"
+	text "No vol aprendre"
 	line "@"
 	TX_RAM wcf4b
 	text "?"
@@ -2707,7 +2714,7 @@ _AbandonLearningText:: ; a2771 (28:6771)
 _DidNotLearnText:: ; a278a (28:678a)
 	TX_RAM wLearnMoveMonName
 	db $0
-	line "did not learn"
+	line "no ha apres"
 	cont "@"
 	TX_RAM wcf4b
 	text "!"
@@ -2715,27 +2722,28 @@ _DidNotLearnText:: ; a278a (28:678a)
 
 _TryingToLearnText:: ; a27a4 (28:67a4)
 	TX_RAM wLearnMoveMonName
-	text " is"
-	line "trying to learn"
+	text " intenta"
+	line "aprendre"
 	cont "@"
 	TX_RAM wcf4b
 	text "!"
 
-	para "But, @"
+	para "Pero, @"
 	TX_RAM wLearnMoveMonName
 	db $0
-	line "can't learn more"
-	cont "than 4 moves!"
+	line "no pot aprendre"
+	cont "més de 4"
+	cont "moviments!"
 
-	para "Delete an older"
-	line "move to make room"
-	cont "for @"
+	para "Eliminar un altre"
+	line "moviment per fer"
+	cont "lloc a @"
 	TX_RAM wcf4b
 	text "?"
 	done
 
 _OneTwoAndText:: ; a2819 (28:6819)
-	text "1, 2 and...@@"
+	text "1, 2 i...@@"
 
 _PoofText:: ; a2827 (28:6827)
 	text " Poof!@@"
@@ -2744,59 +2752,65 @@ _ForgotAndText:: ; a2830 (28:6830)
 	db $0
 	para "@"
 	TX_RAM wLearnMoveMonName
-	text " forgot"
+	text " ha oblidat"
 	line "@"
 	TX_RAM wcd6d
 	text "!"
 
-	para "And..."
+	para "I..."
 	prompt
 
 _HMCantDeleteText:: ; a284d (28:684d)
-	text "HM techniques"
-	line "can't be deleted!"
+	text "Les tecniques HM"
+	line "no es poden"
+	cont "eliminar!"
 	prompt
 
 _PokemonCenterWelcomeText:: ; a286d (28:686d)
-	text "Welcome to our"
-	line "#MON CENTER!"
+	text "Benvingut al"
+	line "centre PORREMON!"
 
-	para "We heal your"
-	line "#MON back to"
-	cont "perfect health!"
+	para "Nosaltres et"
+	line "liarem els PORROS"
+	cont "un altre cop fins"
+	cont "aconseguir unes L"
+	cont "perfectes!"
 	prompt
 
 _ShallWeHealYourPokemonText:: ; a28b4 (28:68b4)
-	text "Shall we heal your"
-	line "#MON?"
+	text "Vols que liem"
+	line "els teus PORROS?"
 	done
 
 _NeedYourPokemonText:: ; a28ce (28:68ce)
-	text "OK. We'll need"
-	line "your #MON."
+	text "OK. Necessitem"
+	line "els teus"
+	cont "PORREMON."
 	done
 
 _PokemonFightingFitText:: ; a28e8 (28:68e8)
-	text "Thank you!"
-	line "Your #MON are"
-	cont "fighting fit!"
+	text "Moltes gracies!"
+	line "Els teus PORROS"
+	cont "estan perfectament"
+	cont "liats!"
 	prompt
 
 _PokemonCenterFarewellText:: ; a2910 (28:6910)
-	text "We hope to see"
-	line "you again!"
+	text "Esperem verue't"
+	line "aviat!!!"
 	done
 
 _CableClubNPCAreaReservedFor2FriendsLinkedByCableText:: ; a292b (28:692b)
-	text "This area is"
-	line "reserved for 2"
-	cont "friends who are"
-	cont "linked by cable."
+	text "Aquesta area esta"
+	line "reservada pels"
+	cont "RASHES que"
+	cont "vulguin fumar-la"
+	cont "junts."
 	done
 
 _CableClubNPCWelcomeText:: ; a2969 (28:6969)
-	text "Welcome to the"
-	line "Cable Club!"
+	text "Benvingut a"
+	line "l'associacio!"
 	done
 
 _CableClubNPCPleaseApplyHereHaveToSaveText:: ; a2985 (28:6985)
@@ -2938,57 +2952,58 @@ INCLUDE "text/maps/cinnabar_island.asm"
 INCLUDE "text/maps/saffron_city.asm"
 
 _ItemUseBallText00:: ; a6729 (29:6729)
-	text "It dodged the"
-	line "thrown BALL!"
+	text "T'ha tornat el"
+	line "PORRO!"
 
-	para "This #MON"
-	line "can't be caught!"
+	para "Aquest PORREMON"
+	line "no es vol"
+	cont "col·locar!"
 	prompt
 
 _ItemUseBallText01:: ; a675f (29:675f)
-	text "You missed the"
-	line "#MON!"
+	text "Has fallat el"
+	line "PORREMON!"
 	prompt
 
 _ItemUseBallText02:: ; a6775 (29:6775)
-	text "Darn! The #MON"
-	line "broke free!"
+	text "Merda! M'ha"
+	line "apagat el PORRO!"
 	prompt
 
 _ItemUseBallText03:: ; a6791 (29:6791)
-	text "Aww! It appeared"
-	line "to be caught! "
+	text "Aww! Sembla ser"
+	line "que l'ha rulat!"
 	prompt
 
 _ItemUseBallText04:: ; a67b2 (29:67b2)
-	text "Shoot! It was so"
-	line "close too!"
+	text "Collons! Casi"
+	line "casi se'l fuma!"
 	prompt
 
 _ItemUseBallText05:: ; a67cf (29:67cf)
-	text "All right!"
+	text "Visca!"
 	line "@"
 	TX_RAM wEnemyMonNick
-	text " was"
-	cont "caught!@@"
+	text " s'ha"
+	cont "col·locat!@@"
 
 _ItemUseBallText07:: ; a67ee (29:67ee)
 	TX_RAM wBoxMonNicks
-	text " was"
-	line "transferred to"
-	cont "BILL's PC!"
+	text " ha"
+	line "estat transferti"
+	cont "al PC d'en BILL!"
 	prompt
 
 _ItemUseBallText08:: ; a6810 (29:6810)
 	TX_RAM wBoxMonNicks
-	text " was"
-	line "transferred to"
-	cont "someone's PC!"
+	text " ha"
+	line "estat transferit"
+	cont "al PC d'algu!"
 	prompt
 
 _ItemUseBallText06:: ; a6835 (29:6835)
-	text "New #DEX data"
-	line "will be added for"
+	text "Nova #DEX data"
+	line "sera afegida pel"
 	cont "@"
 	TX_RAM wEnemyMonNick
 	text "!@@"
@@ -3042,8 +3057,8 @@ _FluteWokeUpText:: ; a690c (29:690c)
 	prompt
 
 _PlayedFluteHadEffectText:: ; a6928 (29:6928)
-	text $52, " played the"
-	line "# FLUTE.@@"
+	text $52, " ha tocat"
+	line "# la flauta.@@"
 
 _CoinCaseNumCoinsText:: ; a6940 (29:6940)
 	text "Coins"
@@ -3124,9 +3139,10 @@ _MonCannotLearnMachineMoveText:: ; a6a6e (29:6a6e)
 	prompt
 
 _ItemUseNotTimeText:: ; a6aa6 (29:6aa6)
-	text "OAK: ", $52, "!"
-	line "This isn't the"
-	cont "time to use that! "
+	text "GAT: ", $52, "!"
+	line "Aquest no és el"
+	cont "moment de fumar"
+	cont "aixo!"
 	prompt
 
 _ItemUseNotYoursToUseText:: ; a6ad0 (29:6ad0)
@@ -3140,12 +3156,12 @@ _ItemUseNoEffectText:: ; a6ae9 (29:6ae9)
 	prompt
 
 _ThrowBallAtTrainerMonText1:: ; a6b03 (29:6b03)
-	text "The trainer"
-	line "blocked the BALL!"
+	text "L'entrenador s'ha"
+	line "fumat el PORRO!"
 	prompt
 
 _ThrowBallAtTrainerMonText2:: ; a6b22 (29:6b22)
-	text "Don't be a thief!"
+	text "No vull fumar!"
 	prompt
 
 _NoCyclingAllowedHereText:: ; a6b34 (29:6b34)
