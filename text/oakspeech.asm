@@ -11,8 +11,8 @@ _OakSpeechText1::
 _OakSpeechText2A::
 	text "Aquest mon esta"
 	line "habitat per"
-	cont "criatures anomenades"
-	cont "PORREMONS!@@"
+	cont "criatures anomena-"
+	cont "des PORREMONS!@@"
 
 _OakSpeechText2B::
 	text $51,"Per alguna gent,"
