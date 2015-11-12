@@ -1,56 +1,57 @@
 _OakSpeechText1::
-	text "Hello there!"
-	line "Welcome to the"
-	cont "world of #MON!"
+	text "Hola Amic!"
+	line "Benvingut al"
+	cont "món dels RASHES!"
 
-	para "My name is OAK!"
-	line "People call me"
-	cont "the #MON PROF!"
+	para "El meu nom és GAT!"
+	line "La gent em diu"
+	cont "el PROF MORAT!"
 	prompt
 
 _OakSpeechText2A::
-	text "This world is"
-	line "inhabited by"
-	cont "creatures called"
-	cont "#MON!@@"
+	text "Aquest món està"
+	line "habitat per"
+	cont "criatures anomenades"
+	cont "PORREMONS!@@"
 
 _OakSpeechText2B::
-	text $51,"For some people,"
-	line "#MON are"
-	cont "pets. Others use"
-	cont "them for fights."
+	text $51,"Per alguna gent,"
+	line "els PORREMONS són"
+	cont "divertits. Altres els"
+	cont "fan servir per volar."
 
-	para "Myself..."
+	para "Per mi..."
 
-	para "I study #MON"
-	line "as a profession."
+	para "Jo estudio els PORREMON"
+	line "com a professió."
 	prompt
 
 _IntroducePlayerText::
-	text "First, what is"
-	line "your name?"
+	text "Primer, quin és"
+	line "el teu nom?"
 	prompt
 
 _IntroduceRivalText::
-	text "This is my grand-"
-	line "son. He's been"
-	cont "your rival since"
-	cont "you were a baby."
+	text "Aquest és el meu"
+	line "net. Ell ha estat"
+	cont "el teu rival des"
+	cont "que anaves a P3."
 
-	para "...Erm, what is"
-	line "his name again?"
+	para "...Erm, em pots"
+	line "recordar el seu nom?"
 	prompt
 
 _OakSpeechText3::
 	text $52,"!"
 
-	para "Your very own"
-	line "#MON legend is"
-	cont "about to unfold!"
+	para "La teva pròpia"
+	line "aventura PORREMON està"
+	cont "a punt de començar!"
 
-	para "A world of dreams"
-	line "and adventures"
-	cont "with #MON"
-	cont "awaits! Let's go!"
+	para "Un món de somnis"
+	line "i grans fumades"
+	cont "amb els PORREMON"
+	cont "t'espera! Som-hi!"
 	done
+
 
