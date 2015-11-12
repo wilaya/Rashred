@@ -1,39 +1,41 @@
 _OaksLabGaryText1:: ; 94d5b (25:4d5b)
-	text $53,": Yo"
-	line $52,"! Gramps"
-	cont "isn't around!"
+	text $53,": Eeeiii!"
+	line $52,"! L'avi"
+	cont "no és per aqui!"
 
 IF DEF(_YELLOW)
-	para "I ran here 'cos"
-	line "he said he had a"
-	cont "#MON for me."
+	para "He vingut fins"
+	line "aqui perque m'ha"
+	cont "dit que té un"
+	cont "PORREMON per mi."
 ENDC
 	done
 
 _OaksLabText40:: ; 94d79 (25:4d79)
 IF DEF(_YELLOW)
 	text $53,": Humph!"
-	line "I'll get a better"
-	cont "#MON than you!"
+	line "Aconseguiré un"
+	cont "PORREMON que coloqui"
+	cont "més que el teu!"
 	done
 ELSE
-	text $53,": Heh, I"
-	line "don't need to be"
-	cont "greedy like you!"
+	text $53,": Heh, jo"
+	line "necessito ser"
+	cont "avaricios com tu!"
 
-	para "Go ahead and"
-	line "choose, ", $52, "!"
+	para "Endevant"
+	line "tria, ", $52, "!"
 	done
 ENDC
 
 _OaksLabText41:: ; 94dbd (25:4dbd)
 IF DEF(_YELLOW)
-	text $53,": Heh, my"
+	text $53,": Heh, el meu"
 ELSE
-	text $53,": My"
+	text $53,": el meu"
 ENDC
-	line "#MON looks a"
-	cont "lot stronger."
+	line "PORREMON sembla"
+	cont "molt més potent."
 	done
 
 _OaksLabText39:: ; 94ddf (25:4ddf)
